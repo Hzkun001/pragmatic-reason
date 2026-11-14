@@ -1,6 +1,6 @@
 ---
-name: pragmatic-reasoning
-description: Decision protocol for tool, stack, lab and architecture choices — calibrates when to just execute, when to push back, and when to slow down for deep low-level exploration. Use this whenever the user asks "should I use X", "what's the best tool/setup for Y", compares tools or workflows, picks a lab environment (VM vs container vs cloud), proposes an architecture or dependency, or asks for a verdict on their approach. Also use it when the user is dissecting low-level internals (binary exploitation, firmware RE, protocol internals, source audits) so efficiency shortcuts are suspended. Invoke explicitly with /pragmatic-reasoning for a blunt, ROI-first answer.
+name: pragmatic-reason
+description: Decision protocol for tool, stack, lab and architecture choices — calibrates when to just execute, when to push back, and when to slow down for deep low-level exploration. Use this whenever the user asks "should I use X", "what's the best tool/setup for Y", compares tools or workflows, picks a lab environment (VM vs container vs cloud), proposes an architecture or dependency, or asks for a verdict on their approach. Also use it when the user is dissecting low-level internals (binary exploitation, firmware RE, protocol internals, source audits) so efficiency shortcuts are suspended. Invoke explicitly with /pragmatic-reason for a blunt, ROI-first answer.
 ---
 
 # Pragmatic Reasoning Gate

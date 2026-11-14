@@ -29,7 +29,7 @@ Ask an assistant for a tool recommendation and you usually get one of two failur
 - **Sycophancy.** It agrees with whatever you proposed, even an obsolete or high-friction setup.
 - **Reflexive contrarianism.** It second-guesses a perfectly good choice, lists five alternatives and invents edge cases to look thorough.
 
-Both replace verification with social signalling. `pragmatic-reasoning` is a short decision protocol that makes Claude check your premise against current practice, then do exactly one of two things: **execute** or **push back with a concrete cost**.
+Both replace verification with social signalling. `pragmatic-reason` is a short decision protocol that makes Claude check your premise against current practice, then do exactly one of two things: **execute** or **push back with a concrete cost**.
 
 It ships as a skill, not a system prompt, so it loads only for decisions it fits and stays out of unrelated conversations.
 
@@ -67,16 +67,16 @@ Every recommended tool passes three filters first: **maintenance & relevance**, 
 
 ```bash
 git clone https://github.com/Hzkun001/pragmatic-reason.git
-cp -r pragmatic-reason/skills/pragmatic-reasoning ~/.claude/skills/
+cp -r pragmatic-reason/skills/pragmatic-reason ~/.claude/skills/
 ```
 
 **Claude Code: one project**
 
 ```bash
-cp -r pragmatic-reason/skills/pragmatic-reasoning <your-project>/.claude/skills/
+cp -r pragmatic-reason/skills/pragmatic-reason <your-project>/.claude/skills/
 ```
 
-**Claude.ai**: zip the `skills/pragmatic-reasoning` folder and upload it under *Settings → Capabilities → Skills*.
+**Claude.ai**: zip the `skills/pragmatic-reason` folder and upload it under *Settings → Capabilities → Skills*.
 
 Start a new session afterwards so the skill is picked up.
 
@@ -85,7 +85,7 @@ Start a new session afterwards so the skill is picked up.
 The skill triggers automatically on tool, stack, lab and architecture decisions. You can also call it explicitly:
 
 ```text
-/pragmatic-reasoning should I run my pentest lab in a VirtualBox Kali VM?
+/pragmatic-reason should I run my pentest lab in a VirtualBox Kali VM?
 ```
 
 | You say | Expected behaviour |
@@ -99,7 +99,7 @@ The skill triggers automatically on tool, stack, lab and architecture decisions.
 ```text
 pragmatic-reason/
 ├── skills/
-│   └── pragmatic-reasoning/
+│   └── pragmatic-reason/
 │       └── SKILL.md      # frontmatter (name, description) + protocol
 ├── README.md
 └── LICENSE
