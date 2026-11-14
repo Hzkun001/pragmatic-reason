@@ -1,6 +1,6 @@
-# claude-skills
+# pragmatic-reason
 
-Personal collection of Agent Skills for Claude Code.
+Personal Agent Skills for Claude Code.
 
 ## Skills
 
@@ -13,8 +13,8 @@ Personal collection of Agent Skills for Claude Code.
 Copy a skill folder into your Claude Code skills directory:
 
 ```bash
-git clone https://github.com/Hzkun001/claude-skills.git
-cp -r claude-skills/skills/pragmatic-reasoning ~/.claude/skills/
+git clone https://github.com/Hzkun001/pragmatic-reason.git
+cp -r pragmatic-reason/skills/pragmatic-reasoning ~/.claude/skills/
 ```
 
 Use `~/.claude/skills/` for all projects, or `<project>/.claude/skills/` for one project only.
